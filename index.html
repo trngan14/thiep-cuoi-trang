@@ -1317,6 +1317,66 @@ html,body{background:#e8dbc0!important;color:var(--ink)}
 .cu-emblem .ring{background:radial-gradient(circle,#7d1526,#4a0b17)!important}
 .cu-l,.cu-r{box-shadow:0 0 30px rgba(60,0,10,.35)!important}
 .cu-emblem em{color:rgba(255,243,207,.9)!important}
+
+/* ===================================================================================
+   📍 [MÀU] TINH CHỈNH THIẾT KẾ BẢN TRẮNG KEM (tìm: TINH CHỈNH THIẾT KẾ)
+   Bảng màu: kem sữa #fffaf0 · champagne #ecd9b0 · vàng foil #c9a24b · hồng phấn #f2b9bf · đỏ ruby #b32a41 · đỏ đậm #8b1a2b · đỏ rượu #5e0f1d
+   Nguyên tắc: nền kem có hơi hồng ở góc (ấm, lãng mạn); đỏ đậm chỉ dùng cho chữ, nút, viền; vàng foil chỉ làm đường nét mảnh; hồng phấn làm ánh sáng.
+   =================================================================================== */
+#app{background:radial-gradient(55% 45% at 88% 6%,rgba(242,185,191,.42),transparent 70%),radial-gradient(50% 45% at 6% 92%,rgba(236,205,140,.42),transparent 70%),radial-gradient(40% 35% at 50% 50%,rgba(255,255,255,.65),transparent 75%),linear-gradient(180deg,#fffbf2,#f9eedb 60%,#f3e2c4)!important}
+.drum{opacity:.07;background:repeating-radial-gradient(circle at 50% 38%,transparent 0 14px,#c08a6a 15px 16px)}
+#deep .d3{opacity:.16}
+#deep .d3 i{background:var(--drum) center/min(150vmax,1900px) no-repeat,repeating-radial-gradient(circle at 50% 42%,transparent 0 30px,rgba(190,120,100,.3) 31px 32px)}
+#deep .d4{opacity:.4}
+#deep .d4 i{background:repeating-radial-gradient(circle,rgba(190,120,100,.4) 0 2px,transparent 2px 30px),repeating-conic-gradient(from 0deg,rgba(201,162,75,.3) 0 .6deg,transparent .6deg 12deg)}
+#deep .d5{opacity:.8;filter:none}
+#sB .hj-bg i{background:repeating-radial-gradient(circle,transparent 0 26px,rgba(190,120,100,.16) 27px 28px)}
+#sB,#sB>.stick{background:radial-gradient(70% 60% at 68% 52%,rgba(242,185,191,.38),transparent 72%),radial-gradient(120% 90% at 50% 0,#fffbf2,#f9eedb 60%,#f1e0c2)!important}
+#sB{background:linear-gradient(180deg,rgba(249,238,219,0) 0,#f9eedb 10%,#f5e6cb 55%,#f1dfc0 100%)!important}
+#sB>.stick{background:none!important}
+/* tiêu đề: đỏ ruby ánh vàng foil, nổi nhẹ (bỏ lớp bóng nâu nặng) */
+.sec-title,.cap b.sec-title,.night .cap b.sec-title{--t1:#a8203a;--t2:#c98a2e;--t3:#5e0f1d;
+ background:linear-gradient(180deg,rgba(255,255,255,.34) 0%,rgba(255,255,255,0) 42%,rgba(60,0,14,.16) 100%),linear-gradient(100deg,var(--t3) 0%,var(--t1) 25%,var(--t2) 50%,var(--t1) 75%,var(--t3) 100%) 0 0/100% 100%,linear-gradient(100deg,var(--t3) 0%,var(--t1) 25%,var(--t2) 50%,var(--t1) 75%,var(--t3) 100%) 0 0/230% 100%!important;
+ background-clip:text!important;-webkit-background-clip:text!important;
+ filter:drop-shadow(0 1px 0 rgba(255,255,255,.95)) drop-shadow(0 2px 0 #e3c070) drop-shadow(0 6px 8px rgba(139,26,43,.28))!important}
+.sec-title:after{background:radial-gradient(circle,#8b1a2b 0 2.5px,transparent 3.5px) center/12px 12px no-repeat,linear-gradient(90deg,transparent,#c9a24b 38%,transparent 44%,transparent 56%,#c9a24b 62%,transparent) center/100% 1.5px no-repeat}
+.sec-title small{color:var(--red)}
+/* thẻ giấy: viền vàng foil mảnh + đổ bóng hồng nhạt */
+.card{box-shadow:0 0 0 7px var(--red),0 0 0 8px #d9b866,0 0 0 11px rgba(255,250,240,.9),0 26px 56px rgba(139,26,43,.2)!important}
+.node{border:1px solid rgba(201,162,75,.55);border-left:3px solid var(--red);box-shadow:0 14px 30px rgba(139,26,43,.16)}
+.node b{color:var(--gold2);letter-spacing:.04em}
+.btn,.act{background:linear-gradient(180deg,#b32a41,#8b1a2c 55%,#6b1022)!important;box-shadow:inset 0 0 0 1px #e2c27a,0 10px 22px rgba(139,26,43,.35)!important}
+.ring2{border-color:rgba(139,26,43,.55)}
+/* bìa */
+.cov{box-shadow:0 30px 70px rgba(139,26,43,.2),0 0 0 1px rgba(201,162,75,.55),0 0 0 9px rgba(255,250,240,.65),0 0 0 10px rgba(201,162,75,.35),inset 0 0 60px rgba(242,185,191,.2)!important}
+.cov:before{background:conic-gradient(from var(--ang),rgba(201,162,75,.55),rgba(139,26,43,.25) 40%,#f0d080 62%,rgba(201,162,75,.55) 80%,rgba(139,26,43,.25))!important}
+.arch{box-shadow:0 0 0 1px #d9b866,0 12px 28px rgba(139,26,43,.28)}
+.hint{color:#7a1224!important;font-weight:500}
+/* Hành trình */
+.jr-case{stroke:#e2c27a;filter:drop-shadow(0 8px 12px rgba(139,26,43,.3))}
+.jr-surf{stroke:#7a1224}
+.jr-dash{stroke:#ffe9c0;opacity:.9}
+.jr-lit{filter:drop-shadow(0 0 6px rgba(255,200,110,.95)) drop-shadow(0 0 14px rgba(242,120,150,.7))}
+.jr-ms{border-color:#d9b866;box-shadow:0 0 0 4px rgba(255,250,240,.98),0 0 0 5px rgba(201,162,75,.7),0 8px 18px rgba(139,26,43,.3)}
+.jr-ms.done{filter:none;border-color:#b32a41;opacity:.96}
+.jr-ms.on{border-color:#fff;box-shadow:0 0 0 4px rgba(255,250,240,.98),0 0 0 6px #b32a41,0 0 0 12px rgba(242,185,191,.55),0 0 30px 10px rgba(242,150,170,.55)}
+.ph-in{box-shadow:0 0 0 7px #fffdf8,0 0 0 8px rgba(201,162,75,.8),0 26px 55px rgba(139,26,43,.32)}
+.ph-in:after{border-color:rgba(255,255,255,.55)}
+.jr-photo:before{background:radial-gradient(closest-side,rgba(242,150,170,.55),rgba(242,185,191,.2) 60%,transparent 80%)}
+#sB .hj-tint{background:radial-gradient(60% 50% at 60% 54%,rgba(242,150,170,.55),rgba(242,185,191,.16) 55%,transparent 75%)}
+/* sợi chỉ đỏ: mảnh và tinh */
+#thread .fill:after{left:-3px;right:-3px;background:linear-gradient(90deg,rgba(242,120,150,0),rgba(242,120,150,.22) 50%,rgba(242,120,150,0))}
+#thread .fill{background:linear-gradient(180deg,#e2ae52,#e0607a 45%,#8b1a2b)}
+/* Lời cầu hôn: nền đất ấm hơn */
+#sC .gnd{background:linear-gradient(#efc2ae,#d28f8c 50%,#a85a6c)}
+#sC .sea{background:linear-gradient(#f4bcae,#e08c88 55%,#c0616c)}
+#sC .isl{background:#d29a9a}
+#sC:after{background:linear-gradient(rgba(249,238,219,0),rgba(249,238,219,.55) 55%,#f9eedb)!important}
+/* Phòng Lab: khung ảnh viền mat trắng + vàng foil */
+.gf{border:1px solid #d9b866;box-shadow:0 0 0 6px #fffdf8,0 0 0 7px rgba(201,162,75,.8),0 20px 38px rgba(139,26,43,.26)}
+.gf:after{background:repeating-linear-gradient(45deg,rgba(201,162,75,.16) 0 5px,transparent 5px 10px),radial-gradient(circle at 50% 40%,#fff3ea,#f4d3cc)}
+.gi figcaption{color:var(--red)!important;letter-spacing:.3em}
+.sp b{text-shadow:none}
 </style>
 </head>
 <body>
@@ -1424,7 +1484,7 @@ html,body{background:#e8dbc0!important;color:var(--ink)}
 <div class="hj-bg"><i></i><i class="r2"></i></div><div class="hj-tint"></div>
 <div class="jr-wrap">
  <div class="jr-road" id="jrRoad">
-  <svg id="jrSvg" aria-hidden="true"><defs><linearGradient id="jrGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff3cf"/><stop offset=".45" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6b88"/></linearGradient></defs>
+  <svg id="jrSvg" aria-hidden="true"><defs><linearGradient id="jrGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe3a0"/><stop offset=".45" stop-color="#ff9ab0"/><stop offset="1" stop-color="#ff6b88"/></linearGradient></defs>
    <path class="jr-p jr-case"/><path class="jr-p jr-surf"/><path class="jr-p jr-dash"/><path class="jr-p jr-lit" id="jrLit"/></svg>
  <button type="button" class="jr-ms" aria-label="Điểm đến 1"></button>
  <button type="button" class="jr-ms" aria-label="Điểm đến 2"></button>
